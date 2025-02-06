@@ -1,27 +1,28 @@
 body{
-    /*margin: 0;*/
-    background-color: rgb(170, 189, 170);
+    margin: 0;
+    background-color: rgb(132, 230, 255);
    
     
 }
 .entete{
-    background-color: rgb(57, 136, 57);
-
+    background-color: #757575;
+    color: aliceblue;
     display: flex;
     justify-content: space-between;
 align-items: center;
 }
 .deuxieme{
-    background-color: rgb(129, 140, 241);
+    background: linear-gradient( #757575,20%, #84e6ff);
     display: flex;
     gap: 800px;
     justify-content:space-between;
-   
+   color: aliceblue;
 }
 .troisieme{
     display: flex;
     gap: 800px;
     justify-content:space-between;
-    background-color: rgb(198, 219, 80);
+    background: linear-gradient(#84e6ff, #84e6ff);
     text-align: right;
+    color: aliceblue;
 }
