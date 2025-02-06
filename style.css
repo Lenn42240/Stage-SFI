@@ -1,0 +1,27 @@
+body{
+    /*margin: 0;*/
+    background-color: rgb(170, 189, 170);
+   
+    
+}
+.entete{
+    background-color: rgb(57, 136, 57);
+
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+}
+.deuxieme{
+    background-color: rgb(129, 140, 241);
+    display: flex;
+    gap: 800px;
+    justify-content:space-between;
+   
+}
+.troisieme{
+    display: flex;
+    gap: 800px;
+    justify-content:space-between;
+    background-color: rgb(198, 219, 80);
+    text-align: right;
+}
