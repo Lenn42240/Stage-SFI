@@ -41,10 +41,10 @@ align-items: center;
 }
 .ballon{
     position: relative;
-    top: 129px;
-    right: 505px;
+    top: 130px;
+    right: 686px;
     animation: move 3s infinite ease-in-out;
-    
+    opacity: 0;
     scale: 62%;
     
   }
@@ -67,12 +67,22 @@ align-items: center;
 @keyframes move {
     0% {
     }
+    10%{
+        opacity: 100%;
+        top: 130px;
+        right: 686px;
+    }
     50% {
         top: -400px;
     }
-    100% {
+    80% {
         top: 0;
-        right: -481px;
+        right: -663px;
+        opacity: 100%;
+    }
+    100% {
+        top: 130px;
+        right: -663px;
     }
 }
 
