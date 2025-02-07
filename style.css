@@ -1,34 +1,47 @@
 body{
     margin: 0;
     background-color: rgb(132, 230, 255);
-    
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+   color: aliceblue;
 }
-.entete{
+.logos{
     background-color: #757575;
-    color: aliceblue;
     display: flex;
     justify-content: space-between;
-align-items: center;
-    font-family: Arial, Helvetica, sans-serif   wq                              ;
+    align-items: center;
 }
+
+.entete{
+    background-color: #757575;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif                               ;
+}
+
+h1 {
+    padding: 0.67em;
+    margin: 0;
+}
+
 .deuxieme{
     background: linear-gradient( #757575,20%, #84e6ff);
-    display: flex;
-    gap: 800px;
-    justify-content:space-between;
-   color: aliceblue;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.troisieme{
-    display: flex;
-    gap: 800px;
-    justify-content:space-between;
-    background: linear-gradient(#84e6ff, #84e6ff);
-    text-align: right;
-    color: aliceblue;
+.description-college {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.image-left {
+    float: left;
+    max-width: 35%;
+    height: auto;
+    margin: 10px;
+}
+.clear-float {
+    display: block;
+    clear: both;
+}
+
+.troisieme{
+    background: linear-gradient(#84e6ff, #84e6ff);
 }
 
 .animation {
@@ -36,57 +49,49 @@ align-items: center;
     height: 100px;
     display: flex;
     justify-content: space-between;
-    
-    
+    }
+.image-right{
+    float: right;
+   max-width: 30%;
+    height: auto;
+    margin: 10px;
+}
+.description-sfi{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .ballon{
-    position: relative;
-    top: 130px;
-    right: 686px;
+    position: absolute;
+    bottom: -130px;
+    left: calc(10% + 45px);
     animation: move 3s infinite ease-in-out;
     opacity: 0;
     scale: 62%;
     
   }
 
-/*
-@keyframes move {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-650%);
-    }
-    100% {
-        right: 0;
-        transform: translateY(-120%);
-    }
-}
-*/
-
 @keyframes move {
     0% {
     }
-    10%{
+    20%{ /* Apparition */
         opacity: 100%;
-        top: 130px;
-        right: 686px;
+        bottom: -130px;
+        left: calc(10% + 45px);
     }
-    50% {
-        top: -400px;
+    50% { /* hauteur max du tir */
+        bottom: calc(0.35 * 100vw);
     }
-    80% {
-        top: 0;
-        right: -663px;
+    80% { /* Arrivée dans le panier */
+        bottom: -10px;
+        left: calc(90% - 140px);
         opacity: 100%;
     }
-    100% {
-        top: 130px;
-        right: -663px;
+    100% { /* disparition */ 
+        bottom: -50px;
+        left: calc(90% - 140px);
     }
 }
 
  main > div{ 
-    padding: 0 10%;
-   
+    padding: 5% 10% 0 10%;
+   max-width: 80%;
 }
